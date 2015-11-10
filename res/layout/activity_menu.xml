@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/blue">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/banner" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exit"
+        android:layout_alignLeft="@+id/add"
+        android:drawableRight="@drawable/settings"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/knapp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/settingsbutton"
+        android:width="220dp" />
+
+    <Button
+        android:id="@+id/showall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/settings"
+        android:layout_alignLeft="@+id/settings"
+        android:drawableRight="@drawable/list"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/knapp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/showallbutton"
+        android:width="220dp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/showall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:drawableRight="@drawable/add"
+        android:paddingRight="10dp"
+        android:background="@drawable/knapp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/addbutton"
+        android:width="220dp" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settings"
+        android:layout_alignParentBottom="true"
+        android:drawableRight="@drawable/exit"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/knapp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/exitbutton"
+        android:width="220dp" />
+
+    <TextView
+        android:id="@+id/birthdaymessagelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/defaultmessage" />
+
+    <EditText
+        android:id="@+id/birthdaymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthdaymessagelabel"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:fontFamily="Arial-bold"
+        android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+        android:gravity="center"
+        android:labelFor="@+id/birthdaymessage"
+        android:maxLength="60"
+        android:width="270dp"
+        android:text="@string/defaultbirthdaymessage" >
+
+        <requestFocus />
+    </EditText>
+
+
+</RelativeLayout>

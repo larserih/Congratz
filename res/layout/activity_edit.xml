@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue" >
+
+        <EditText
+            android:id="@+id/editfirstnamefield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editfirstname"
+            android:layout_alignBottom="@+id/editfirstname"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/editfirstname"
+            android:ems="10"
+            android:inputType="text|textCapSentences"
+            android:labelFor="@+id/editfirstnamefield"
+            android:width="200dp" />
+        
+        <ImageView
+             android:id="@+id/editnumberfromcontacts"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="112dp"
+             android:layout_marginLeft="16dp"
+             android:layout_toRightOf="@+id/editlastname"
+             android:contentDescription="@string/app_name"
+             android:src="@drawable/plus" />
+         <EditText
+            android:id="@+id/editlastnamefield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editlastname"
+            android:layout_alignBottom="@+id/editlastname"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/editlastname"
+            android:ems="10"
+            android:inputType="text|textCapSentences"
+            android:labelFor="@+id/editlastnamefield"
+            android:width="200dp" />
+
+		<EditText
+             android:id="@+id/editnumberfield"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/editnumber"
+             android:layout_alignBottom="@+id/editnumber"
+             android:layout_alignRight="@+id/editlastnamefield"
+             android:ems="10"
+             android:inputType="phone"
+             android:maxLength="8"
+             android:labelFor="@+id/editnumberfield"
+             android:width="160dp" />
+
+         <TextView
+             android:id="@+id/editfirstname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_alignRight="@+id/editlastname"
+             android:fontFamily="sans-serif-thin"
+             android:layout_marginTop="31dp"
+             android:text="@string/firstname" />
+
+         <TextView
+             android:id="@+id/editlastname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/editnumber"
+             android:layout_below="@+id/editfirstnamefield"
+             android:fontFamily="sans-serif-thin"
+             android:layout_marginTop="18dp"
+             android:text="@string/lastname" />
+
+         <TextView
+             android:id="@+id/editnumber"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/editlastnamefield"
+             android:fontFamily="sans-serif-thin"
+             android:layout_marginLeft="17dp"
+             android:layout_marginTop="30dp"
+             android:text="@string/number" />
+
+         <ImageView
+             android:id="@+id/editwarningfirstname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignTop="@+id/editfirstname"
+             android:contentDescription="@string/app_name"
+             android:src="@drawable/warning" />
+
+         <ImageView
+             android:id="@+id/editwarninglastname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignTop="@+id/editlastname"
+             android:contentDescription="@string/app_name"
+             android:src="@drawable/warning" />
+
+         <ImageView
+             android:id="@+id/editwarningnumber"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignTop="@+id/editnumber"
+             android:contentDescription="@string/app_name"
+             android:src="@drawable/warning" />
+         
+         <TextView
+             android:id="@+id/editbirthday"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/editnumber"
+             android:layout_centerVertical="true"
+             android:fontFamily="sans-serif-thin"
+             android:text="@string/birthday" />
+
+         <DatePicker
+             android:id="@+id/editbirthdayfield"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/editnumberfield"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="57dp"
+             android:calendarViewShown="false" />
+
+         <Button
+             android:id="@+id/edit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/editbirthdayfield"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/knapp"
+             android:fontFamily="sans-serif-thin"
+             android:text="@string/save" />
+
+</RelativeLayout>

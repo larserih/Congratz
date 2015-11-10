@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/blue"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+<TimePicker
+    android:id="@+id/timepicker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/changetime"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="16dp" />
+
+<ImageButton
+    android:id="@+id/norwegian"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignRight="@+id/changetime"
+    android:layout_marginBottom="20dp"
+    android:background="@color/blue"
+    android:contentDescription="@string/language"
+    android:src="@drawable/flagnorwegian" />
+
+<ImageButton
+    android:id="@+id/english"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/changetime"
+    android:layout_alignTop="@+id/norwegian"
+    android:background="@color/blue"
+    android:contentDescription="@string/language"
+    android:src="@drawable/flagenglish" />
+
+<TextView
+    android:id="@+id/langugage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/norwegian"
+    android:layout_centerHorizontal="true"
+    android:fontFamily="sans-serif-thin"
+    android:text="@string/language" />
+
+<View
+    android:id="@+id/separator"
+    android:layout_width="fill_parent"
+    android:layout_height="1dip"
+    android:layout_above="@+id/langugage"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="17dp"
+    android:background="@color/yellow" />
+
+<View
+    android:id="@+id/separator2"
+    android:layout_width="fill_parent"
+    android:layout_height="1dip"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="230dp"
+    android:background="@color/yellow" />
+
+<TextView
+    android:id="@+id/onoffservice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/separator"
+    android:layout_centerHorizontal="true"
+    android:fontFamily="sans-serif-thin"
+    android:layout_marginBottom="64dp"
+    android:text="@string/onoffservice" />
+
+<Button
+    android:id="@+id/buttonOn"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/separator"
+    android:layout_alignLeft="@+id/onoffservice"
+    android:layout_marginBottom="14dp"
+    android:text="@string/on" />
+
+<Button
+    android:id="@+id/buttonOff"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/buttonOn"
+    android:layout_alignBottom="@+id/buttonOn"
+    android:layout_alignRight="@+id/onoffservice"
+    android:text="@string/off" />
+
+<TextView
+    android:id="@+id/changetime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="14dp"
+    android:fontFamily="sans-serif-thin"
+    android:text="@string/changetime" />
+
+<TextView
+    android:id="@+id/status"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/onoffservice"
+    android:layout_alignBottom="@+id/onoffservice"
+    android:layout_toRightOf="@+id/onoffservice"/>
+
+</RelativeLayout>

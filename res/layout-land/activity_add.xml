@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/blue">
+
+        <EditText
+            android:id="@+id/firstnamefield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/firstname"
+            android:layout_alignBottom="@+id/firstname"
+            android:layout_marginLeft="15dp"
+            android:layout_alignRight="@+id/lastnamefield"
+            android:ems="10"
+            android:inputType="text|textCapSentences"
+            android:labelFor="@+id/firstnamefield"
+            android:width="200dp" />
+        
+         <EditText
+            android:id="@+id/lastnamefield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lastname"
+            android:layout_alignBottom="@+id/lastname"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/lastname"
+            android:ems="10"
+            android:inputType="text|textCapSentences"
+            android:labelFor="@+id/lastnamefield"
+            android:width="200dp" />
+
+         <EditText
+             android:id="@+id/numberfield"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/number"
+             android:layout_alignBottom="@+id/number"
+             android:layout_alignRight="@+id/lastnamefield"
+             android:ems="10"
+             android:maxLength="8"
+             android:inputType="phone"
+             android:labelFor="@+id/numberfield"
+             android:width="160dp" />
+
+         <TextView
+             android:id="@+id/firstname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_alignLeft="@+id/lastname"
+             android:fontFamily="sans-serif-thin"
+             android:layout_marginTop="31dp"
+             android:text="@string/firstname" />
+
+         <TextView
+             android:id="@+id/lastname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/number"
+             android:layout_below="@+id/firstnamefield"
+             android:fontFamily="sans-serif-thin"
+             android:layout_marginTop="18dp"
+             android:text="@string/lastname" />
+
+         <TextView
+             android:id="@+id/number"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/lastnamefield"
+             android:fontFamily="sans-serif-thin"
+             android:layout_marginLeft="17dp"
+             android:layout_marginTop="30dp"
+             android:text="@string/number" />
+
+         <ImageView
+             android:id="@+id/numberfromcontacts"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="112dp"
+             android:layout_marginLeft="16dp"
+             android:layout_toRightOf="@+id/lastname"
+             android:contentDescription="@string/app_name"
+             android:src="@drawable/plus" />
+
+         <DatePicker
+             android:id="@+id/birthdayfield"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/numberfromcontacts"
+             android:layout_toRightOf="@+id/numberfromcontacts"
+             android:calendarViewShown="false" />
+
+         <TextView
+             android:id="@+id/birthday"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/number"
+             android:layout_alignTop="@+id/save"
+             android:fontFamily="sans-serif-thin"
+             android:text="@string/birthday" />
+
+         <ImageView
+             android:id="@+id/warningfirstname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/firstname"
+             android:layout_marginLeft="22dp"
+             android:layout_toRightOf="@+id/firstnamefield"
+             android:contentDescription="@string/app_name"
+             android:src="@drawable/warning" />
+
+         <ImageView
+             android:id="@+id/warninglastname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/warningfirstname"
+             android:layout_alignTop="@+id/lastname"
+             android:contentDescription="@string/app_name"
+             android:src="@drawable/warning" />
+
+         <ImageView
+             android:id="@+id/warningnumber"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/warninglastname"
+             android:layout_alignTop="@+id/number"
+             android:contentDescription="@string/app_name"
+             android:src="@drawable/warning" />
+
+         <Button
+             android:id="@+id/save"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/birthdayfield"
+             android:layout_marginLeft="48dp"
+             android:layout_marginTop="30dp"
+             android:layout_toRightOf="@+id/birthdayfield"
+             android:background="@drawable/knapp"
+             android:fontFamily="sans-serif-thin"
+             android:text="@string/save" />
+
+</RelativeLayout>

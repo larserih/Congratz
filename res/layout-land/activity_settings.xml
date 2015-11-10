@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue" >
+
+    <Button
+        android:id="@+id/buttonOff"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonOn"
+        android:layout_alignBottom="@+id/buttonOn"
+        android:layout_alignRight="@+id/onoffservice"
+        android:text="@string/off" />
+
+    <Button
+        android:id="@+id/buttonOn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onoffservice"
+        android:layout_alignTop="@+id/timepicker"
+        android:text="@string/on" />
+
+    <TextView
+        android:id="@+id/changetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/timepicker"
+        android:layout_alignLeft="@+id/timepicker"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/changetime" />
+
+    <TextView
+        android:id="@+id/langugage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/english"
+        android:layout_alignRight="@+id/buttonOff"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="18dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/language" />
+
+    <ImageButton
+        android:id="@+id/norwegian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonOff"
+        android:layout_below="@+id/langugage"
+        android:background="@color/blue"
+        android:contentDescription="@string/language"
+        android:src="@drawable/flagnorwegian" />
+
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/english"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="24dp" />
+
+    <TextView
+        android:id="@+id/onoffservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/changetime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="34dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/onoffservice" />
+
+    <ImageButton
+        android:id="@+id/english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonOn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="22dp"
+        android:background="@color/blue"
+        android:contentDescription="@string/language"
+        android:src="@drawable/flagenglish" />
+
+</RelativeLayout>
